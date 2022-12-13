@@ -83,7 +83,6 @@ export const Login = async (req: Request, res: Response) => {
         fecha_fin: tomorrow,
         estado: 'activo'
     })
-    
     res.send({
         rol: usuario.user_type,
         id: usuario.id_usuario,
