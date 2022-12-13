@@ -3,7 +3,6 @@ import { Usuario } from "../entity/usuario.entity";
 import bcryptjs from "bcryptjs"
 import { sign } from "jsonwebtoken";
 import { Sesiones } from "../entity/sesiones.entity";
-import { Productos } from "../entity/productos";
 const jwt = require('jsonwebtoken');
 var bcrypt = require('bcrypt');
 var nodemailer = require('nodemailer');
