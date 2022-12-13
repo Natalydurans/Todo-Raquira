@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { DeleteProduct, GetProductos, Product } from "./controller/producto.controller";
+import { DeleteProduct, GetProductos, Product, UpdateProduct } from "./controller/producto.controller";
 import { GetSessiones } from "./controller/sesiones.controller";
 
 
@@ -17,5 +17,6 @@ export const routes = (router: Router) => {
     router.post('/api/v1/updateUser', User);
     router.delete('/api/v1/deletePersona/:id', Delete);
     router.delete('/api/v1/deleteProducto/:id', DeleteProduct);
+    router.put('/api/v1/updateProduct', UpdateProduct);
 
 }

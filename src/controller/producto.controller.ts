@@ -27,3 +27,10 @@ export const DeleteProduct = async (req: Request, res: Response) => {
       throw error.message;
     }
 }
+
+export const UpdateProduct = async (req: Request, res: Response) => {
+  console.log(req.body)
+  await Productos.update(req.body.id_producto, req.body);
+  const {...userRead } = await Productos.findOneBy({id_producto: req.body.id_producto});
+  res.send(userRead);
+}
